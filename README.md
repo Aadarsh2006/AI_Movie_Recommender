@@ -28,14 +28,14 @@ Users can enter any keyword (genre, movie name, director, actor, year, or even a
 ---
 
 ## 📂 Project Structure
--AI-movie-recommendation/
--│── app.py # Streamlit app (UI + display)
--│── utils/
--│ └── recommendation.py # Core recommendation logic
--│── data/
--│ └── movies.csv # Movie dataset (IMDb metadata)
--│── requirements.txt # Python dependencies
--│── README.md # Project documentation
+AI-movie-recommendation/
+│── app.py # Streamlit app (UI + display)
+│── utils/
+│ └── recommendation.py # Core recommendation logic
+│── data/
+│ └── movies.csv # Movie dataset (IMDb metadata)
+│── requirements.txt # Python dependencies
+│── README.md # Project documentation
 
 
 ---
@@ -53,13 +53,13 @@ This app is deployed on Streamlit Cloud.
 
 ## 📌 Future Improvements
 
--🎥 Add trailer links (YouTube API).
--🎭 Add collaborative filtering (user-based recommendations).
--🌍 Expand dataset to include more global movies.
--📱 Build mobile-friendly version.
+- 🎥 Add trailer links (YouTube API).
+- 🎭 Add collaborative filtering (user-based recommendations).
+- 🌍 Expand dataset to include more global movies.
+- 📱 Build mobile-friendly version.
 
 ---
 
 ## 👨‍💻 Author
--Aadarsh Jha
--Linkedin : www.linkedin.com/in/aadarshjha09
+- Aadarsh Jha
+- Linkedin : www.linkedin.com/in/aadarshjha09
