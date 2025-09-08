@@ -3,6 +3,7 @@ import re
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
+import os
 
 # Load embedding model (semantic meaning)
 model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
@@ -12,8 +13,10 @@ def clean_text(text):
     text = re.sub(r'[^a-z0-9\s]', '', text)
     return text
 
+
 def load_data():
-    movies = pd.read_csv(r"C:\Users\Aadarsh\Desktop\CodSoft\AI_Movie_Recommendation\data\movies.csv")
+    path = os.path.join("data", "movies.csv")   # relative path
+    movies = pd.read_csv(path)
 
     # Clean key columns
     for col in ['Series_Title','Genre','Director','Star1','Star2','Star3','Star4','Overview']:
@@ -55,3 +58,4 @@ def recommend_movies(user_input, movies, top_n=5):
     recommended = movies.iloc[top_indices][['Series_Title','Released_Year','Genre','Director','IMDB_Rating','Poster_Link']]
 
     return recommended
+
