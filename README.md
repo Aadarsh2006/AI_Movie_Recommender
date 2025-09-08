@@ -3,7 +3,7 @@
 An **AI-powered movie recommendation system** built using **Content-Based Filtering + Semantic Search**.  
 Users can enter any keyword (genre, movie name, director, actor, year, or even a short description), and the system recommends the most relevant movies with posters, ratings, and details.
 
-🚀 Live Demo: [Click Here](https://your-username-movie-recommender.streamlit.app)  
+🚀 Live Demo: [Click Here](https://ai-movie-recommendation-aadarsh.streamlit.app/)  
 
 
 ---
